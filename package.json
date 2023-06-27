@@ -1,16 +1,16 @@
 {
   "name": "vs-portfolio",
   "homepage": "https://Anuhya1024.github.io",
+  "name": "website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

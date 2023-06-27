@@ -6,6 +6,10 @@ dotenv.config();
 
 export default defineConfig({
   plugins: [react()],
+  base:"/website/",
+  build:{
+    outDir:"dist"
+  },
   server: {
     host: true,
   },
