@@ -31,13 +31,14 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10"  style={{ color: '#FFFFFF' }}>
-          {navLinks.map((link) => {
+          {navLinks.map((link, index) => {
             return (
               <li
                 key={link.id}
-                className={`${
-                  active === link.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer `}
+                className={`nav-item ${
+                  active === link.title ? "text-white active" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -58,13 +59,14 @@ const Navbar = () => {
             } pt-20 p-6 black-gradient absolute top-2 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => {
+              {navLinks.map((link, index) => {
                 return (
                   <li
                     key={link.id}
-                    className={`${
-                      active === link.title ? "text-white" : "text-secondary"
+                    className={`nav-item ${
+                      active === link.title ? "text-white active" : "text-secondary"
                     } font-poppins font-medium cursor-pointer text-[16px]`}
+                    style={{ animationDelay: `${index * 0.1}s` }}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(!toggle);

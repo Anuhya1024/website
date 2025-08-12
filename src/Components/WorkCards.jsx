@@ -103,8 +103,7 @@ const SectionWrapper = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 my-[-17%] w-[500%]`}
-        style={{ marginLeft: "-20%" }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         <span className='hash-span' id={idName}>
           &nbsp;
@@ -125,8 +124,7 @@ const SectionWrapper = (Component, idName) =>
             scale: 1,
             speed: 450
           }}
-          className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
-          style={{ marginTop: '-120%' }}
+          className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full bg-tertiary min-h-[320px]'
           >
           <div
             className="relative w-full h-[180px]"
@@ -151,7 +149,7 @@ const SectionWrapper = (Component, idName) =>
   
           <div className="mt-3">
             <h3 className="text-white font-bold text-[20px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
+            <p className="mt-2 text-secondary text-[14px] leading-[18px] line-clamp-3 overflow-hidden">{description}</p>
           </div>
           <div
             className="mt-2 flex flex-wrap gap-1"
@@ -184,7 +182,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-8 flex flex-wrap gap-7">
         {work.map((project, index) => (
           <ProjectCard 
             key={`work-${index}`}

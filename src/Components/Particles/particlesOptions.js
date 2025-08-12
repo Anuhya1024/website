@@ -1,11 +1,3 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: particleOptions.js
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 02/06/2023
-*/
 
 export const heroOptions = {
   autoPlay: true,
@@ -135,12 +127,12 @@ export const heroOptions = {
       enable: true,
       random: false,
       size: false,
-      speed: 0.8,
+      speed: 1.2,
       outMode: 'bounce',
     },
     number: {
       limit: 0,
-      value: 30,
+      value: 40,
     },
 
     opacity: {
@@ -161,7 +153,7 @@ export const heroOptions = {
       },
     },
 
-    shape: {
+        shape: {
       type: 'character',
       character: [
         {

@@ -29,7 +29,8 @@ import {
   pyIcon,
   viteIcon,
   nodeIcon,
-  raspIcon,
+  dockerIcon,
+  kubernetesIcon,
   neoIcon,
   figmaIcon,
   communitySensing,
@@ -38,7 +39,9 @@ import {
   avatar,
   fireeye,
   infy,
-  iith
+  iith,
+  crowdDoing,
+  techinfo,
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -57,7 +60,8 @@ const media = {
   pyIcon,
   viteIcon,
   nodeIcon,
-  raspIcon,
+  dockerIcon,
+  kubernetesIcon,
   neoIcon,
   figmaIcon,
   avatar,
@@ -77,7 +81,7 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there, I'm thrilled to have you here, ready to embark on a journey of discovery. (:",
+    "Hello there!, I'm thrilled to have you here, ready to embark on a journey of discovery :-)",
 
     "Allow me to introduce myself - I am Anuhya, a passionate individual driven by curiosity and a relentless pursuit of excellence.",
 
@@ -113,20 +117,28 @@ export const navLinks = [
 
 const work = [
   {
-    name: "Software Engineer Intern at FireEye      May 2023 - Aug 2023",
-    description: 'Leveraged React and Python technologies to design, develop and implement 20+ custom dashboard items for the DRAY platform, allowing for real-time monitoring of client engagement metrics. Analyzed engagement data to provide insights into lifecycle, timeline, and status of client interactions. Utilized plugin framework to create reusable plugins, resulting in 50% increase in operational efficiency, reduced development time. Resulted in 20% improvement in engagement tracking and 30% reduction in time required for engagement analysis.',
-    image: fireeye,
-    
-    // demo_link: '',
+    name: "Software Engineer",
+    description: 'Developed and maintained full-stack web applications using Java, React, AWS and Spring Boot. Developed reusable and modular React components using functional components, hooks, and class components, adhering to best practices and design patterns. Utilized Spring Boot to develop scalable backend services and integrate with databases. Designed and optimized database schemas, SQL queries, and implemented data access layers using Hibernate. Used design patterns Adapter, Singleton, Strategy, Abstract Factory, MVC, DAO, and Facade. Employed containerization, deployment strategies using Docker, Kubernetes for scalable and efficient deployments.',
+    image: techinfo,
   },
   {
-    name: 'Infosys Limited',
+    name: "Software Engineer",
+    description: 'Developed a cross-platform mobile application from scratch using React Native and MongoDB that allows users to track their time spent in nature and prioritize their well-being. Utilized React hooks such as useState, useEffect, useContext. Created custom React hooks to encapsulate complex logic, promoting code reuse and composability across React components and applications. Employed React Suspense and lazy loading techniques to defer component rendering and loading of resources, improving initial page load times. Utilized Git, Jira, agile methodologies to facilitate cross-functional collaboration Implemented state management solutions such as Redux, MobX, or Context API to manage application state and data flow efficiently across components. Axios for handling API requests, and React Navigation for app navigation. Developed and maintained RESTful APIs using Spring Boot. Developed entity classes, mappings using Hibernate. Used Maven for automatically loading all the dependencies and Jenkins to build and maintain the code for testing. Employed AWS CloudWatch for monitoring and logging performance, Integrated AWS services such as S3.',
+    image: crowdDoing,
+  },
+  {
+    name: "Software Engineer Intern",
+    description: 'Leveraged React and Python technologies to design, develop and implement 20+ custom dashboard items for the DRAY platform, allowing for real-time monitoring of client engagement metrics. Analyzed engagement data to provide insights into lifecycle, timeline, and status of client interactions. Utilized plugin framework to create reusable plugins, resulting in 50% increase in operational efficiency, reduced development time. Resulted in 20% improvement in engagement tracking and 30% reduction in time required for engagement analysis.',
+    image: fireeye,
+  },
+  {
+    name: 'Software Engineer',
     description: 'Developed a customized workflow for printer management. Created service catalogs and automated tasks such as printer setup, maintenance, and troubleshooting. Generated work orders, and notified stakeholders. Automated 1000+ comprehensive test cases and step configs utilizing ServiceNow, and JavaScript ensuring seamless regression & server-side functionality testing for Incident, Change, Problem, SR, and AM modules. Performed thorough analysis and enhancement of client scripts, UI Policies, and UI Actions on the ServiceNow plat- form and identified over 100+ vulnerabilities, resulting in increased platform stability and security.',
     image: infy,
     
   },
   {
-    name: 'IIT Hyderabad',
+    name: 'Software Engineer Intern',
     description: 'E-Learning SaaS : Utilized Node.js, MongoDB, Pug, Jade, and JS and Spearheaded the process, to develop an experience to enroll courses aligned their interests and improved user engagement by 40%. Elevated website\'s security by deploying on A2hosting server and installing SSL certificate, resulted in 25% reduction in workload.',
     image: iith,
   },
@@ -152,7 +164,7 @@ const projects = [
     description: 'a responsive website site that pulls data from a third party API, https://OpenWeatherMap.com and https://Foursquare.com, to present search results in a useful way. Trip Planner gives users the ability to find weather results and venues in a specific location.',
     image: trip,
     source_code_link: 'https://github.com/cu-csci-4253-datacenter-fall-2021/final-project-Anuhya1024/tree/main',
-    //demo_link: 'https://bl33hscalculator.netlify.app/',
+    //demo_link: '',
   },
 ];
 

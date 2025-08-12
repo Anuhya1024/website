@@ -19,7 +19,9 @@ import viteIcon from './tech/vite.svg';
 import pyIcon from './tech/py.png';
 import nodeIcon from './tech/node.webp';
 import neoIcon from './tech/neo.png';
-import raspIcon from './tech/raspi.png';
+
+import dockerIcon from './tech/docker.png';
+import kubernetesIcon from './tech/kubernetes.png';
 import close from './close.svg';
 import menu from './menu.svg';
 
@@ -32,9 +34,11 @@ import hrms from './projects/hrms.png';
 import fireeye from './work/fireeye.png';
 import infy from './work/infy.png';
 import iith from './work/iith.png';
+import crowdDoing from './work/crowdDoing.jpeg';
+import techinfo from './work/techinfo.png';
 
 // Avatar
-import avatar from './avatar/avatar.png';
+import avatar from './avatar/avatar.jpg';
 
 export {
   menu,
@@ -54,7 +58,8 @@ export {
   pyIcon,
   viteIcon,
   neoIcon,
-  raspIcon,
+  dockerIcon,
+  kubernetesIcon,
   communitySensing,
   trip,
   hrms,
@@ -63,4 +68,6 @@ export {
   fireeye,
   infy,
   iith,
+  crowdDoing,
+  techinfo,
 };
